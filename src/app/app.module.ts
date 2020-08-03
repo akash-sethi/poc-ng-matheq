@@ -14,7 +14,9 @@ import { KatexModule } from 'ng-katex';
     AppRoutingModule,
     KatexModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'Window',  useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
